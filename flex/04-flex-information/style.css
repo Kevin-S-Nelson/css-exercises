@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center; /*I did this for each item, not overall...*/
 }
 
 img {
@@ -10,6 +11,24 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  /*display: flex;            No longer needed these two, as we allinged text center for all of "body"
+  justify-content: center;*/
+  margin-bottom: 32px;
+}
+
+.imagesWithDescriptions { /*Only flexbox required*/
+  display: flex;
+  gap: 52px;     /*column-gap: 52px;     Just use gap*/
+  justify-content: center;
+}
+
+.plantInfo {
+    /*display: flex;            None of this was needed,
+    flex-wrap: wrap;            try to make it as simple
+    justify-content: center;    as possible
+    flex: 0 0 200px;
+    text-align: center;*/
+    max-width: 200px;
 }
 
 /* do not edit this footer */
