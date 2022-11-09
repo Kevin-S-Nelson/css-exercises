@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -16,6 +19,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
 }
 
 input {
@@ -35,12 +39,13 @@ ul {
   list-style-type: none;
   display: flex;
   gap: 16px;
+  padding: 8px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+  margin-bottom: 8px;
 }
 
 .content {
@@ -50,8 +55,10 @@ ul {
 }
 
 .footer {
+  background: #eeeeee;
   display: flex;
   justify-content: space-between;
+  margin-top: 8px;
 }
 
 .left-links {
