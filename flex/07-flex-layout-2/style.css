@@ -4,25 +4,70 @@ body {
   min-height: 100vh;
 }
 
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
 }
 
-.footer {
-  height: 72px;
-  background: #eee;
-  color: darkmagenta;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  font-size: 24px;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
+  display: flex;
+  flex-direction: column;
+  padding-right: 32px;
+  flex: none;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 32px;
+  gap: 16px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 300px;
+}
+
+.footer {
+  height: 72px;
+  background: #eee;
+  color: darkmagenta;
+  justify-content: center;
 }
